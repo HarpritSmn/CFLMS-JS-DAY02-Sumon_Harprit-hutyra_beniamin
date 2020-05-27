@@ -20,20 +20,20 @@
 
         function calcAge(currentYear, yearOfBirth) {
             return currentYear - yearOfBirth;
-            return currentYear - yearOfBirth + 1;
+
         }
 
-        function calcAge1(currentYear, yearOfBirth) {
-            return currentYear - yearOfBirth;
-            return currentYear - yearOfBirth + 1;
+        function calcAge1(currentYear, yearOfBirth, x) {
+
+            return currentYear - yearOfBirth - x;
         }
 
         var myAge = calcAge(2021, 1989);
-        var
-            document.write("My age is = ")
+        var myAge1 = calcAge1(2021, 1989, 1);
+        document.write("My age is = ");
         document.write(myAge);
         document.write(" or it is ");
-        document.write(myAge);
+        document.write(myAge1);
     </script>
 </body>
 
