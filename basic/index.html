@@ -8,23 +8,7 @@
 
 <body>
 
-    <script>
-        /*function crystalGazer(children,namepartner,location,jobtitle){
 
-                                                                        				var result = "children" + "namepartner" + "location" + "jobtitle";
-                                                                        				console.log(result);
-                                                                        		}
-                                                                        		crystalGazer(Harprit,Beniamin,Vienna,Barkeeper);
-                                                                        		*/
-
-
-        function multiplication(child, partner, location, job) {
-            var result = child + "" + partner + location + job;
-            console.log(result);
-        }
-
-        multiplication("harprit", "beni", "vienna", "barkeeper");
-    </script>
 
     <script>
         //Basic Exercise 1
@@ -87,16 +71,16 @@
             return currentYear - birthYear;
         }
         document.write("Your Age is " + calculateAge(1996) + " years old.");*/
-/*
-        function conversion(degree) {
-            var radian = Math.pi / 180;
+        /*
+                function conversion(degree) {
+                    var radian = Math.pi / 180;
 
-            return degree * radian;
-        }
-        var conversion_result = conversion(3);
-        document.write(conversion_result);
+                    return degree * radian;
+                }
+                var conversion_result = conversion(3);
+                document.write(conversion_result);
 
-*/
+        */
         // function convert(degree){
 
         //     var result = degree*(Math.PI/180);
@@ -106,16 +90,29 @@
         //  var name = convert(4);
         // document.write(name);
 
-
-        function calculateAge() {
+        // Serri additional Code
+        /*function calculateAge() {
             var birthYear = prompt("type your birth year");
             var currentYear = new Date().getFullYear();
 
             return currentYear - birthYear;
         }
-        document.write("Your Age is " + calculateAge() + " years old.");
+        document.write("Your Age is " + calculateAge() + " years old.");*/
 
+        var area = (function() {
+            var width = 7;
+            var height = 2;
+            return width * height;
+        }());
+        console.log(area)
 
+        var area = (function() {
+            var width = 7;
+            var height = 2;
+            var depth = 5;
+            return width * height * depth;
+        }());
+        console.log(area)
     </script>
 
 </body>
