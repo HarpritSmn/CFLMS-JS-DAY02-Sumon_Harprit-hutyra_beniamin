@@ -87,7 +87,7 @@
             return currentYear - birthYear;
         }
         document.write("Your Age is " + calculateAge(1996) + " years old.");*/
-
+/*
         function conversion(degree) {
             var radian = Math.pi / 180;
 
@@ -95,6 +95,27 @@
         }
         var conversion_result = conversion(3);
         document.write(conversion_result);
+
+*/
+        // function convert(degree){
+
+        //     var result = degree*(Math.PI/180);
+
+        //     return result;
+        // }
+        //  var name = convert(4);
+        // document.write(name);
+
+
+        function calculateAge() {
+            var birthYear = prompt("type your birth year");
+            var currentYear = new Date().getFullYear();
+
+            return currentYear - birthYear;
+        }
+        document.write("Your Age is " + calculateAge() + " years old.");
+
+
     </script>
 
 </body>
