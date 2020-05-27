@@ -98,21 +98,31 @@
             return currentYear - birthYear;
         }
         document.write("Your Age is " + calculateAge() + " years old.");*/
+        //Basic Exercise 7
+        /* var area = (function() {
+             var width = 7;
+             var height = 2;
+             return width * height;
+         }());
+         console.log(area)
 
-        var area = (function() {
-            var width = 7;
-            var height = 2;
-            return width * height;
-        }());
-        console.log(area)
+         var area = (function() {
+             var width = 7;
+             var height = 2;
+             var depth = 5;
+             return width * height * depth;
+         }());
+         console.log(area)*/
 
-        var area = (function() {
-            var width = 7;
-            var height = 2;
-            var depth = 5;
-            return width * height * depth;
-        }());
-        console.log(area)
+        //Basic Exercise 7
+        function multiplication(a, b, c, d, e) {
+            var result = a * b * c * d * e;
+            console.log(result);
+            return result;
+        }
+
+        var multi_result = multiplication(1, 3, 7, 10, 2);
+        document.write(multi_result);
     </script>
 
 </body>
