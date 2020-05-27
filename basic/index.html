@@ -8,24 +8,23 @@
 
 <body>
 
-	<script>
+    <script>
+        /*function crystalGazer(children,namepartner,location,jobtitle){
 
-		/*function crystalGazer(children,namepartner,location,jobtitle){
-
-				var result = "children" + "namepartner" + "location" + "jobtitle";
-				console.log(result);
-		}
-		crystalGazer(Harprit,Beniamin,Vienna,Barkeeper);
-		*/
+                				var result = "children" + "namepartner" + "location" + "jobtitle";
+                				console.log(result);
+                		}
+                		crystalGazer(Harprit,Beniamin,Vienna,Barkeeper);
+                		*/
 
 
-    function multiplication(child,partner,location,job) {
-           var result = child+"" +partner+ location + job;
+        function multiplication(child, partner, location, job) {
+            var result = child + "" + partner + location + job;
             console.log(result);
         }
 
-        multiplication ("harprit", "beni", "vienna", "barkeeper");
-	</script>
+        multiplication("harprit", "beni", "vienna", "barkeeper");
+    </script>
 
     <script>
         //Basic Exercise 1
@@ -38,15 +37,11 @@
         crystalGazer(" Harprit ", " Beniamin ", " Vienna ", " Barkeeper ");
 		*/
 
-<<<<<<< HEAD
 
-        /*
-        function calcAge(currentYear, yearOfBirth) {
-=======
         //Basic Exercise 2
         /*
 		function calcAge(currentYear, yearOfBirth) {
->>>>>>> 4059c6a58c786f8577bc6682df5482bbe3a8d44f
+
             return currentYear - yearOfBirth;
 
         }
@@ -65,9 +60,9 @@
 <<<<<<< HEAD
 
         */
-        
 
-       /* function calcAge(currentYear, yearOfBirth) {
+
+        /* function calcAge(currentYear, yearOfBirth) {
             return currentYear - yearOfBirth;
             currentYear = getFullYear();
         }
@@ -85,19 +80,12 @@
         document.write(" or it is ");
         document.write(myAge1);                 */
 
-function calculate_age(dob) { 
-    var diff_ms = Date.now() - dob.getTime();
-    var age_dt = new Date(diff_ms); 
-    return Math.abs(age_dt.getUTCFullYear() - 1970);
-}
-document.write(calculate_age(new Date(1982, 11, 4)));
-document.write("<br>")
-document.write(calculate_age(new Date(1962, 1, 1)));
+        function calculateAge(birthYear) {
+            var currentYear = new Date().getFullYear();
 
-
-=======
-		*/
->>>>>>> 4059c6a58c786f8577bc6682df5482bbe3a8d44f
+            return currentYear - birthYear;
+        }
+        document.write("Your Age is " + calculateAge(1996) + " years old.");
     </script>
 
 </body>
