@@ -19,7 +19,7 @@
 		*/
 
 
-function multiplication(child,partner,location,job) {
+    function multiplication(child,partner,location,job) {
            var result = child+"" +partner+ location + job;
             console.log(result);
         }
@@ -38,6 +38,8 @@ function multiplication(child,partner,location,job) {
         crystalGazer(" Harprit ", " Beniamin ", " Vienna ", " Barkeeper ");
 		*/
 
+
+        /*
         function calcAge(currentYear, yearOfBirth) {
             return currentYear - yearOfBirth;
 
@@ -54,6 +56,38 @@ function multiplication(child,partner,location,job) {
         document.write(myAge);
         document.write(" or it is ");
         document.write(myAge1);
+
+        */
+        
+
+       /* function calcAge(currentYear, yearOfBirth) {
+            return currentYear - yearOfBirth;
+            currentYear = getFullYear();
+        }
+
+        function calcAge1(currentYear, yearOfBirth, x) {
+
+            return currentYear - yearOfBirth - x;
+        currentYear = getFullYear();
+        }
+    var currentYear = getFullYear();
+        var myAge = calcAge(currentYear, 1989);
+        var myAge1 = calcAge1(currentYear, 1989, 1);
+        document.write("My age is = ");
+        document.write(myAge);
+        document.write(" or it is ");
+        document.write(myAge1);                 */
+
+function calculate_age(dob) { 
+    var diff_ms = Date.now() - dob.getTime();
+    var age_dt = new Date(diff_ms); 
+    return Math.abs(age_dt.getUTCFullYear() - 1970);
+}
+document.write(calculate_age(new Date(1982, 11, 4)));
+document.write("<br>")
+document.write(calculate_age(new Date(1962, 1, 1)));
+
+
     </script>
 
 </body>
