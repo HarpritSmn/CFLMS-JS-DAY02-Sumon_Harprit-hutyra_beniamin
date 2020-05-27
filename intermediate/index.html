@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<link rel="stylesheet" href="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
 </head>
+
 <body>
-	<script>
-		
-/*
-//intermediate One
-var firstLetterToUp = (function() {  
-  var sentence = 'i am a web developer';
-  var letter =sentence.charAt(0);
-  var big = letter.toUpperCase();
-  var rest = sentence.slice(1,30);
+    <script>
+        /*
+                                                                        //intermediate One
+                                                                        var firstLetterToUp = (function() {  
+                                                                          var sentence = 'i am a web developer';
+                                                                          var letter =sentence.charAt(0);
+                                                                          var big = letter.toUpperCase();
+                                                                          var rest = sentence.slice(1,30);
+        																  var rest2 = big+ sentence.substring(1)
+                                                                          alert(result = big+rest);
 
-  alert(result = big+rest);
+                                                                        }());
 
-}());
+                                                                        */
 
-*/
+        function average() {
+            //var grades = prompt("type your grades");
+            var math = prompt("type you grade for math");
+            var physic = prompt("type you grade for physic");
+            var englisch = prompt("type you grade for englisch");
 
+            var sum = Number(math) + Number(physic) + Number(englisch);
+            var avg = sum / 3;
 
+            return [sum, avg];
 
+        }
+        var gradesSum = average();
 
-
-	</script>
+        document.write(gradesSum[0] + "<br>" + gradesSum[1]);
+    </script>
 </body>
+
 </html>
