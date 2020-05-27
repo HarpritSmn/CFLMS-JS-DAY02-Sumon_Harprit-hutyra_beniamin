@@ -28,12 +28,32 @@ function multiplication(child,partner,location,job) {
 	</script>
 
     <script>
-        function crystalGazer(child, partner, location, title) {
+        //Basic Exercise 1
+        /*
+		function crystalGazer(child, partner, location, title) {
             var result = child + partner + location + title;
             console.log(result);
         }
 
         crystalGazer(" Harprit ", " Beniamin ", " Vienna ", " Barkeeper ");
+		*/
+
+        function calcAge(currentYear, yearOfBirth) {
+            return currentYear - yearOfBirth;
+
+        }
+
+        function calcAge1(currentYear, yearOfBirth, x) {
+
+            return currentYear - yearOfBirth - x;
+        }
+
+        var myAge = calcAge(2021, 1989);
+        var myAge1 = calcAge1(2021, 1989, 1);
+        document.write("My age is = ");
+        document.write(myAge);
+        document.write(" or it is ");
+        document.write(myAge1);
     </script>
 
 </body>
